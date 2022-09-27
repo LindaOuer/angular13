@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { UserCardComponent } from './user-card/user-card.component';
 import { FooterComponent } from './footer/footer.component';
 import { ListUserComponent } from './list-user/list-user.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,10 @@ import { ListUserComponent } from './list-user/list-user.component';
     HeaderComponent,
     UserCardComponent,
     FooterComponent,
-    ListUserComponent
+    ListUserComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
