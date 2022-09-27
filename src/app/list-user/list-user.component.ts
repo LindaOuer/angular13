@@ -8,6 +8,7 @@ import { User } from '../model/User';
 })
 export class ListUserComponent implements OnInit {
   list: User[];
+  category: string;
 
   constructor() {}
 
@@ -69,5 +70,10 @@ export class ListUserComponent implements OnInit {
         profession: 'Software Engineer',
       },
     ];
+  }
+
+  search(val) {
+    this.category = val;
+    console.log(this.category);
   }
 }
