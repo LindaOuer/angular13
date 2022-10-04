@@ -76,4 +76,8 @@ export class ListUserComponent implements OnInit {
     this.category = val;
     console.log(this.category);
   }
+
+  delete(i: number) {
+    this.list.splice(i, 1);
+  }
 }
