@@ -9,6 +9,7 @@ import { UserCardComponent } from './user-card/user-card.component';
 import { FooterComponent } from './footer/footer.component';
 import { ListUserComponent } from './list-user/list-user.component';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FormsModule } from '@angular/forms';
     UserCardComponent,
     FooterComponent,
     ListUserComponent,
+    HomeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
