@@ -15,51 +15,7 @@
         <app-header></app-header>
         <!---end slide--->
         <router-outlet></router-outlet>
-        <!---start accountsList section--->
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 my-3">
-              <app-user-card
-                [userName]="'Admin Account'"
-                [userText]="
-                  'An admin account has privileges to manage services for other people in the App.'
-                "
-                [userImage]="'../assets/images/admin.png'"
-              ></app-user-card>
-            </div>
-            <div class="col-lg-4 my-3">
-              <app-user-card
-                [userName]="'Customer Account'"
-                [userText]="
-                  'A Customer Account is a centralized place to manage all billing information about customers.'
-                "
-                [userImage]="'../assets/images/customer.png'"
-              ></app-user-card>
-            </div>
-            <div class="col-lg-4 my-3">
-              <app-user-card
-                [userName]="'Golden Account'"
-                [userText]="
-                  'All Golden members benefit from the features included with the Cambrian Golden Account.'
-                "
-                [userImage]="'../assets/images/golden.png'"
-              ></app-user-card>
-            </div>
-            <div class="col-lg-4 my-3">
-              <app-user-card
-                [userName]="'Blocked Account'"
-                [userText]="
-                  'An account that does not allow for unlimited but instead has certain restrictions.'
-                "
-                [userImage]="'../assets/images/blocked.png'"
-              ></app-user-card>
-            </div>
-          </div>
-        </div>
-        <!---end accountsList section--->
-        <!---start usersList section--->
-        <app-list-user></app-list-user>
-        <!---end usersList section--->
+        
       </div>
 
       <!-----Footer Section------>

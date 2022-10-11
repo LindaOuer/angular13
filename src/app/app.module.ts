@@ -10,6 +10,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ListUserComponent } from './list-user/list-user.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { UserManagementComponent } from './user-management/user-management.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     ListUserComponent,
     HomeComponent,
+    UserManagementComponent,
+    UserDetailsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
