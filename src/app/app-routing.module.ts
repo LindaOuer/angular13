@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { UserDetailsComponent } from './user-details/user-details.component';
-import { UserManagementComponent } from './user-management/user-management.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -10,12 +8,17 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent,
   },
-
   {
     path: 'userManagement',
-    component: UserManagementComponent,
-    children: [{ path: 'user-details/:id', component: UserDetailsComponent }],
+    loadChildren: () => import('./user/user.module').then((m) => m.UserModule),
   },
+
+  // {
+  //   path: 'userManagement',
+  //   component: UserManagementComponent,
+  //   children: [{ path: 'user-details/:id', component: UserDetailsComponent }],
+  // },
+  // {path: '**', componenet : NotFoundComponent}
 ];
 
 @NgModule({

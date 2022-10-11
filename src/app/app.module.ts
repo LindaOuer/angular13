@@ -7,24 +7,18 @@ import { TestComponent } from './test/test.component';
 import { HeaderComponent } from './header/header.component';
 import { UserCardComponent } from './user-card/user-card.component';
 import { FooterComponent } from './footer/footer.component';
-import { ListUserComponent } from './list-user/list-user.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
-import { UserManagementComponent } from './user-management/user-management.component';
-import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
     HeaderComponent,
-    UserCardComponent,
     FooterComponent,
-    ListUserComponent,
     HomeComponent,
-    UserManagementComponent,
-    UserDetailsComponent,
   ],
+
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
